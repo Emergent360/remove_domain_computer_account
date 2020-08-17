@@ -5,6 +5,6 @@
 
 - name: Remove computer account from domain
   win_domain_computer:
-    name: "{{ inventory_hostname_short }}"
+    name: "{{ ansible_hostname }}"
     state: absent
   delegate_to: ip-172-31-15-130.ec2.internal
