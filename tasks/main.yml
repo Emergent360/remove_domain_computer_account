@@ -1,8 +1,5 @@
 ---
 # tasks file for remove_domain_computer_account
-- debug:
-    msg: "{{ hostvars[inventory_hostname] }}"
-
 - name: Remove computer account from domain
   win_domain_computer:
     name: "{{ ansible_hostname }}"
