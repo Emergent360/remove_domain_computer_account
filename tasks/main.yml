@@ -7,4 +7,4 @@
   win_domain_computer:
     name: "{{ inventory_hostname_short }}"
     state: absent
-    delegate_to: ip-172-31-15-130.ec2.internal
+  delegate_to: ip-172-31-15-130.ec2.internal
